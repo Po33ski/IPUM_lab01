@@ -6,11 +6,11 @@ from pathlib import Path
 
 def export_envs(environment: str = "dev") -> None:
     if environment == "dev":
-        load_dotenv(dotenv_path=Path("env.dev"))
+        load_dotenv(dotenv_path=Path(".env.dev"))
     elif environment == "prod":
-        load_dotenv(dotenv_path=Path("env.prod"))
+        load_dotenv(dotenv_path=Path(".env.prod"))
     elif environment == "test":
-        load_dotenv(dotenv_path=Path("env.test"))
+        load_dotenv(dotenv_path=Path(".env.test"))
 
 
 if __name__ == "__main__":
